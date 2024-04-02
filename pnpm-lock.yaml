@@ -13,7 +13,7 @@ importers:
     dependencies:
       '@eth-optimism/contracts-ts':
         specifier: ^0.15.0
-        version: 0.15.0(@wagmi/core@2.6.5)(typescript@5.0.4)(wagmi@2.5.7)
+        version: 0.15.0(@wagmi/core@2.6.5)(typescript@5.0.4)
       '@wagmi/core':
         specifier: ^2.x
         version: 2.6.5(@types/react@18.2.38)(react@18.2.0)(typescript@5.0.4)(viem@2.7.11)
@@ -37,8 +37,8 @@ importers:
         specifier: ^2.26.2
         version: 2.26.2
       '@eth-optimism/core-utils':
-        specifier: ^0.12.3
-        version: 0.12.3
+        specifier: ^0.13.2
+        version: 0.13.2
       '@eth-optimism/sdk':
         specifier: ^3.1.2
         version: 3.1.6(ethers@5.7.2)
@@ -2318,6 +2318,29 @@ packages:
     requiresBuild: true
     dev: true
 
+  /@eth-optimism/contracts-ts@0.15.0(@wagmi/core@2.6.5)(typescript@5.0.4):
+    resolution: {integrity: sha512-qga3xsj+NhnxjY96TWktKAmc2DSYrdy0E+lVkS3NZ/b5w898IisoMj/Xvv3KoovBJmnk+/ENNnMX7kk+fwQdtA==}
+    peerDependencies:
+      '@wagmi/core': '>1.0.0'
+      wagmi: '>1.0.0'
+    peerDependenciesMeta:
+      '@wagmi/core':
+        optional: true
+      wagmi:
+        optional: true
+    dependencies:
+      '@testing-library/react': 14.1.2(react-dom@18.2.0)(react@18.2.0)
+      '@wagmi/core': 2.6.5(@types/react@18.2.38)(react@18.2.0)(typescript@5.0.4)(viem@2.7.11)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      viem: 1.19.9(typescript@5.0.4)
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
   /@eth-optimism/contracts-ts@0.15.0(@wagmi/core@2.6.5)(typescript@5.0.4)(wagmi@2.5.7):
     resolution: {integrity: sha512-qga3xsj+NhnxjY96TWktKAmc2DSYrdy0E+lVkS3NZ/b5w898IisoMj/Xvv3KoovBJmnk+/ENNnMX7kk+fwQdtA==}
     peerDependencies:
@@ -2380,8 +2403,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@eth-optimism/core-utils@0.12.3:
-    resolution: {integrity: sha512-NzHai4HCWbHbnuu4HJaDhT8aGGZXyrKqgteHGhOPKGHRl3DTuuisD/baFq1XVck6X0iHjDihQOLuygtxkdL19A==}
+  /@eth-optimism/core-utils@0.13.1:
+    resolution: {integrity: sha512-1FvzbUmCEy9zSKPG1QWg2VfA2Cy90xBA9Wkp11lXXrz91zUPCNCNSRTujXWYIC86ketNsZp7p4njSf6lTycHCw==}
     requiresBuild: true
     dependencies:
       '@ethersproject/abi': 5.7.0
@@ -2404,9 +2427,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@eth-optimism/core-utils@0.13.1:
-    resolution: {integrity: sha512-1FvzbUmCEy9zSKPG1QWg2VfA2Cy90xBA9Wkp11lXXrz91zUPCNCNSRTujXWYIC86ketNsZp7p4njSf6lTycHCw==}
-    requiresBuild: true
+  /@eth-optimism/core-utils@0.13.2:
+    resolution: {integrity: sha512-u7TOKm1RxH1V5zw7dHmfy91bOuEAZU68LT/9vJPkuWEjaTl+BgvPDRDTurjzclHzN0GbWdcpOqPZg4ftjkJGaw==}
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/abstract-provider': 5.7.0
