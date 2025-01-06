@@ -16,7 +16,7 @@ Runs test script
 
 ### typecheck.yml
 
-Runs the typechecker. Since build is done (faster) with babel typechecker must be run as a seperate lint step.
+Runs the typechecker. Since build is done (faster) with babel typechecker must be run as a separate lint step.
 
 ## CD
 
